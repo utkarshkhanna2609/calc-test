@@ -28,6 +28,12 @@ def main():
         except ValueError as error:
             print(f"Error: {test_case['a']} {test_case['op']} {test_case['b']} - {error}")
 
+    # Test expression evaluation feature
+    print('\n--- Expression Evaluation ---')
+    user_input = "10 + 5 * 2"
+    result = calculator.calculate(None, None, user_input)
+    print(f"Expression '{user_input}' = {result}")
+
     # Test error cases
     print('\n--- Error Handling ---')
     try:

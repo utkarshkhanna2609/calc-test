@@ -5,6 +5,11 @@ Follows Interface Segregation Principle - defines a single, focused contract.
 from abc import ABC, abstractmethod
 
 
+def helper_function(x, y):
+	"""Helper function for operations. Uses tabs for indentation."""
+	return x + y
+
+
 class Operation(ABC):
     """
     Abstract base class that defines the contract for all calculator operations.
